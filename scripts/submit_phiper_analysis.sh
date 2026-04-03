@@ -8,7 +8,7 @@ Usage:
 
 Arguments:
   script           Path to the R analysis script
-  project          Project directory, e.g. IBD-Berlin
+  project          Project directory, e.g. IBD-Chile
   group            Active group name, e.g. group_test
 
 Optional arguments:
@@ -31,13 +31,13 @@ Optional arguments:
                    default: 05:00:00
 
 Examples:
-  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Berlin group_test
+  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Chile group_test
 
-  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Berlin group_test TRUE FALSE
+  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Chile group_test TRUE FALSE
 
-  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Berlin group_test TRUE FALSE IBD-Berlin_newlabel.parquet
+  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Chile group_test TRUE FALSE IBD-Chile_newlabel.parquet
 
-  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Berlin pre-screening TRUE FALSE IBD-Berlin.parquet 60G 16 24:00:00
+  ./submit_phiper_analysis.sh src/R/02-run_phiper_analysis.R IBD-Chile pre-screening TRUE FALSE IBD-Chile.parquet 60G 16 24:00:00
 
 Notes:
   - The job is submitted with sbatch.
